@@ -1,0 +1,335 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN NORMALIZE.CSS)
+	- Normalize
+	- Box sizing
+	- Media width
+	- Screen Reader Text
+# Base
+	- Typography
+	- Elements
+	- Links
+# Components
+	- Header
+	- Main
+# Dark Mode
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+
+/* Typography
+--------------------------------------------- */
+
+body {
+    font-family: 'marcellus', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    position: absolute;
+    background-color: transparent;
+    z-index: 1000;
+    left: 1rem;
+    margin: 0;
+    padding-top: .9rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'black han sans', Impact, 'Arial Narrow Bold', sans-serif;
+    color: #000080;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+h3 {
+    font-family: 'black han sans', Impact, 'Arial Narrow Bold', sans-serif;
+    color: #000080;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+    padding-bottom: .5rem;
+}
+
+/* Elements
+--------------------------------------------- */
+
+
+
+/* Links
+--------------------------------------------- */
+
+a,
+a:visited {
+    color: #ffa500;
+}
+
+a:hover,
+a:focus {
+    color: blue;
+}
+
+a:focus {
+    outline: 1px dotted #234723;
+}
+
+a:active {
+    color: #ffffff;
+    background-color: #234723;
+}
+
+/* Header
+--------------------------------------------- */
+
+video {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.site-wrapper {
+	max-width: 120rem;
+	margin: 0 auto;
+}   
+
+.site-header {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-header img {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.site-logo {
+    font-size: 2.5rem;
+    font-family: 'jua', Arial, Helvetica, sans-serif;
+}
+
+.site-navigation {
+    padding: 0 1rem;
+}
+
+.site-navigation ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: 'black han sans', Arial, Helvetica, sans-serif;
+}
+
+.site-navigation a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 0;
+    color: #ffffff;
+}
+
+.site-navigation ul {
+    display: none;
+    position: absolute;
+    top: 4.5rem;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.menu-toggle {
+    position: absolute;
+    right: 5%;
+    top: 1%;
+    background-color: transparent;
+    border: 0;
+    padding: 1rem;
+}
+
+.menu-toggle path {
+    fill: #ffffff;
+}
+
+.menu-toggle:focus {
+    border: 0;
+    outline: .1rem solid #ffffff;
+}
+
+.site-navigation.toggled ul {
+    display: block;
+}
+
+/* Main
+--------------------------------------------- */
+
+.site-main {
+    display: block;
+    top: 20rem;
+    background-color: #b0e2f8;
+}
+
+.site-main p {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.1rem;
+    max-width: 50rem;
+    text-align: left;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.table-section {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border: .15rem solid #8c8c8c;
+    font-size: .8rem;
+    letter-spacing: .2rem;
+}
+
+.table-title {
+    caption-side: bottom;
+    padding: .6rem;
+    font-weight: bold;
+}
+
+thead,
+tfoot {
+    background-color: #e4f0f5;
+}
+
+th,
+td {
+    font-size: .8rem;
+    border: .2rem solid #a0a0a0;
+}
+
+td:last-of-type {
+    text-align: center;
+}
+
+tbody > tr:nth-last-of-type(even) {
+    background-color: rgb(237 238 242);
+}
+
+.food-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 1rem;
+    line-height: 2rem;
+}
+
+.food-section p {
+    padding: 1rem .5rem 1rem .5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.food-culture-1 {
+    border-top: .1rem solid #000080;
+    border-bottom: .1rem solid #000080;
+    background-color: #ffffff;
+    padding: 1rem;
+    margin: 0 .5rem;
+}
+
+.food-culture-2 {
+    padding: 1rem;
+    margin: 0 .5rem;
+}
+
+.food-culture-3 {
+    border-top: .1rem solid #000080;
+    background-color: white;
+    padding: 1rem;
+    margin: 0 .5rem;
+}
+
+.history-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.discover-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 2rem;
+}
+
+/* .discovery-section h2 {
+    margin-top: 0;
+} */
+
+/* footer
+--------------------------------------------- */
+
+.site-footer {
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: rgb(0, 47, 128);
+}
+
+/* @media (min-width: 50em) {
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #2f4f4f;
+    }
+
+    .nav-logo {
+        font-size: 2rem;
+        color: #ffffff;
+    }
+
+    .nav-menu {
+        display: flex;
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .nav-menu li:hover {
+        background-color: burlywood;
+        border-radius: .5rem;
+    }
+
+    .nav-menu li {
+        padding: .5rem .75rem;
+    }
+
+} */
