@@ -30,6 +30,7 @@ body {
     line-height: 1.5;
     margin: 0;
     width: 100%;
+    background-color: #b0e2f8;
 }
 
 h1 {
@@ -51,6 +52,8 @@ h2 {
     text-align: center;
     text-transform: uppercase;
     text-decoration: underline;
+    margin: 0;
+    padding-top: 1rem;
 }
 
 h3 {
@@ -201,7 +204,7 @@ video {
     text-align: left;
     border-radius: 1rem;
     padding: 1rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 .table-section {
@@ -286,9 +289,12 @@ tbody > tr:nth-last-of-type(even) {
     line-height: 2rem;
 }
 
-/* .discovery-section h2 {
-    margin-top: 0;
-} */
+.credit-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 2rem;
+}
 
 /* footer
 --------------------------------------------- */
@@ -303,33 +309,84 @@ tbody > tr:nth-last-of-type(even) {
     background-color: rgb(0, 47, 128);
 }
 
-/* @media (min-width: 50em) {
+@media (min-width: 50em) {
 
-    .navbar {
+	.menu-toggle {
+		display: none;
+	}
+
+    .site-logo {
+        top: 1.5rem;
+        left: 5rem;
+    }
+
+	.site-navigation {
+		flex: 1 1 auto;
+		padding: 0 1rem;
+	}
+
+	.site-navigation ul,
+	.site-navigation.toggled ul {
+		display: flex;
+		justify-content: flex-end;
+		position: absolute;
+		top: 2rem;
+	}
+
+	.site-navigation a {
+		line-height: 4.5rem;
+		padding: 0 1rem;
+	}
+
+    .section-quotes {
+        margin-left: 13rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .history-section {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
-        background-color: #2f4f4f;
     }
 
-    .nav-logo {
-        font-size: 2rem;
-        color: #ffffff;
+    .history-section div {
+        width: 25rem;
+        height: 18.75rem;
     }
 
-    .nav-menu {
-        display: flex;
-        list-style: none;
-        padding-left: 0;
+    .history-section img {
+        width: 25rem;
+        height: 18.75rem;
+        padding: 1rem 1rem 0 1rem;
     }
 
-    .nav-menu li:hover {
-        background-color: burlywood;
-        border-radius: .5rem;
+    .gyeongbokgung {
+        margin-bottom: 3rem;
+        order: -1;
     }
 
-    .nav-menu li {
-        padding: .5rem .75rem;
+    .food-section img {
+        width: 25rem;
+        height: 15.75rem;
     }
 
-} */
+    .food-section {
+        display: grid;
+        grid-template-columns: minmax(0, 24rem) minmax(0, 24rem) minmax(0, 24rem);
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .food-culture-3 {
+        border-bottom: .1rem solid #000080;
+    }
+
+    .food-culture-2 {
+        border-top: .1rem solid #ffffff;
+        border-bottom: .1rem solid #ffffff;
+    }
+
+}
