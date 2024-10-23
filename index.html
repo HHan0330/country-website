@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Country Website</title>
-    <meta name="description" content="The Republic of Korea is the only divided country in the world.">
+    <meta name="description" content="The Republic of Korea is located at the center of Northeast Asia. It is the only divided country in the world. For the Democratic People's Republic of Korea. korean have their own special and unique culture and traditions.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
@@ -26,40 +26,42 @@
 
 <body>
     <a class="screen-reader-text" href="#section-main">Skip to content</a>
-        <header class="site-header">
-            <h1 class="site-logo">대한민국</h1>
-            <video autoplay loop muted playsinline>
-                <source src="videos/south-korea.mp4" type="video/mp4">
-                " Your browser does not support the video tag"
-            </video>
-            <nav class="site-navigation" id="site-navigation">
-                <button class="menu-toggle" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
-                        <title>Menu Icon</title>
-                        <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
-                    </svg>
-                </button>
-                <ul class="nav-menu" id="header-menu">
-                    <li><a href="https://index.html" target="_blank" rel="noreferrer noopener">Home</a></li>
-                    <li><a href="history.html" target="_blank" rel="noreferrer noopener">History</a></li>
-                    <li><a href="food.html" target="_blank" rel="noreferrer noopener">Food</a></li>
-                    <li><a href="discover.html" target="_blank" rel="noreferrer noopener">Discover</a></li>
-                    <li><a href="credit.html" target="_blank" rel="noreferrer noopener">Credit</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header class="site-header">
+        <h1 class="site-logo">대한민국</h1>
+        <video autoplay loop muted playsinline>
+            <source src="videos/south-korea.mp4" type="video/mp4">
+            " Your browser does not support the video tag"
+        </video>
+        <nav class="site-navigation" id="site-navigation">
+            <button class="menu-toggle" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
+                    <title>Menu Icon</title>
+                    <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
+                </svg>
+            </button>
+            <ul class="nav-menu" id="header-menu">
+                <li><a href="https://index.html" target="_blank" rel="noreferrer noopener">Home</a></li>
+                <li><a href="history.html" target="_blank" rel="noreferrer noopener">History</a></li>
+                <li><a href="food.html" target="_blank" rel="noreferrer noopener">Food</a></li>
+                <li><a href="discover.html" target="_blank" rel="noreferrer noopener">Discover</a></li>
+                <li><a href="credit.html" target="_blank" rel="noreferrer noopener">Credit</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main class="site-main">
         <section class="section-quotes">
             <h2>Brief knowledge about Republic of Korea</h2>
             <p><q cite="https://www.mk.co.kr/en/world/11141200">Korea is one of the most amazing economic success
-                    stories in world <a href="history.html">history</a>,” he said. “I see no reason why the growth model that has fueled Korea’s
+                    stories in world <a href="history.html">history</a>,” he said. “I see no reason why the growth model
+                    that has fueled Korea’s
                     growth over the past 50 years cannot be sustainable in the future.</q><cite>-JamesA.
                     Robbinson-</cite></p>
         </section>
         <section class="about-section">
             <figure class="about-image">
-                <img src="images/korean-map.jpg" alt="korean-map"><figcaption>South Korea Map</figcaption>
+                <img src="images/korean-map.jpg" alt="korean-map">
+                <figcaption>South Korea Map</figcaption>
             </figure>
             <table class="table-section">
                 <caption class="table-title">Republic of Korea</caption>
@@ -103,7 +105,17 @@
         </section>
     </main>
     <footer class="site-footer">
-        <p>© 2024 FWD Ian Han</p>
+        <div class="footer-name">
+            <p>© 2024 FWD Ian Han</p>
+        </div>
+        <form action="#" method="get" class="form-email">
+            <p>Let's keep in Touch!!</p>
+            <div class="form-content">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
     </footer>
 </body>
 

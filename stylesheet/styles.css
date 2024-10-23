@@ -65,14 +65,8 @@ h3 {
     padding-bottom: .5rem;
 }
 
-/* Elements
---------------------------------------------- */
-
-
-
 /* Links
 --------------------------------------------- */
-
 a,
 a:visited {
     color: #0000ff;
@@ -94,7 +88,6 @@ a:active {
 
 /* Header
 --------------------------------------------- */
-
 video {
     display: block;
     width: 100%;
@@ -105,11 +98,6 @@ video {
     right: 0;
     z-index: 0;
 }
-
-/* .site-wrapper {
-	max-width: 120rem;
-	margin: 0 auto;
-}    */
 
 .site-header {
     align-items: center;
@@ -189,7 +177,6 @@ video {
 
 /* Main
 --------------------------------------------- */
-
 .site-main {
     display: block;
     top: 20rem;
@@ -244,6 +231,8 @@ tbody>tr:nth-last-of-type(even) {
     background-color: rgb(237 238 242);
 }
 
+/* Food-Section(Mobile-view)
+--------------------------------------------- */
 .food-section {
     display: flex;
     flex-wrap: wrap;
@@ -278,6 +267,8 @@ tbody>tr:nth-last-of-type(even) {
     margin: 0 .5rem;
 }
 
+/* History-Section(Mobile-view)
+--------------------------------------------- */
 .history-section {
     display: flex;
     flex-wrap: wrap;
@@ -289,6 +280,12 @@ tbody>tr:nth-last-of-type(even) {
     padding: .5rem;
 }
 
+.history-content {
+    order: -1;
+}
+
+/* Discover-Section(Mobile-view)
+--------------------------------------------- */
 .discover-section {
     display: flex;
     flex-wrap: wrap;
@@ -300,6 +297,8 @@ tbody>tr:nth-last-of-type(even) {
     padding: .5rem;
 }
 
+/* Credit-Section(Mobile-view)
+--------------------------------------------- */
 .credit-section {
     display: flex;
     flex-wrap: wrap;
@@ -307,7 +306,7 @@ tbody>tr:nth-last-of-type(even) {
     line-height: 2rem;
 }
 
-/* footer
+/* footer-Section(Mobile-view)
 --------------------------------------------- */
 
 .site-footer {
@@ -320,11 +319,22 @@ tbody>tr:nth-last-of-type(even) {
     background-color: rgb(0, 47, 128);
 }
 
-/* Start media query
+.form-content {
+    margin-bottom: 1.5rem;
+}
+
+.form-email p {
+    text-align: left;
+    margin-left: .6rem;
+}
+
+/* Start media query for Desktop
 ---------------------------------------------- */
 
 @media (min-width: 50em) {
 
+/* Header-Section
+----------------------------------------------*/
     .menu-toggle {
         display: none;
     }
@@ -362,6 +372,8 @@ tbody>tr:nth-last-of-type(even) {
         padding-bottom: 1rem;
     }
 
+/* Main-Section
+----------------------------------------------*/
     figcaption {
         text-align: center;
     }
@@ -385,6 +397,8 @@ tbody>tr:nth-last-of-type(even) {
         margin-right: 0;
     }
 
+/* History-Section
+----------------------------------------------*/
     .history-section {
         display: flex;
         flex-wrap: wrap;
@@ -405,6 +419,8 @@ tbody>tr:nth-last-of-type(even) {
         padding: 1rem 1rem 0 1rem;
     }
 
+/* Food-Section
+----------------------------------------------*/
     .food-section img {
         width: 25rem;
         height: 15.75rem;
@@ -427,6 +443,8 @@ tbody>tr:nth-last-of-type(even) {
         border-bottom: .1rem solid #ffffff;
     }
 
+/* Discover-Section
+----------------------------------------------*/
     .discover-header {
         display: flex;
         flex-wrap: wrap;
@@ -435,7 +453,6 @@ tbody>tr:nth-last-of-type(even) {
         align-items: center;
         padding-top: 1rem;
         padding-bottom: 1rem;
-
     }
 
     .discover-section {
@@ -452,6 +469,8 @@ tbody>tr:nth-last-of-type(even) {
         padding: 1rem;
     }
 
+/* Credit-Section  
+----------------------------------------------*/
     .credit-section-1 p {
         text-align: center;
     }
@@ -462,6 +481,28 @@ tbody>tr:nth-last-of-type(even) {
 
     .credit-main li {
         list-style: none;
+    }
+
+/* site-footer 
+----------------------------------------------*/
+    .site-footer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .footer-name p {
+        font-size: 1.5rem;
+    }
+
+    .form-content {
+        margin-bottom: 2rem;
+    }
+
+    .form-email p {
+        text-align: left;
+        font-size: 1.5rem;
+        margin-bottom: .5rem;
     }
 
 }

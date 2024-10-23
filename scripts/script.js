@@ -1,3 +1,6 @@
+
+// This code is referenced and taken from the news content in the Web development course.
+
 ( function() {
 	const siteNavigation = document.getElementById( 'site-navigation' );
 
