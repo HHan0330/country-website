@@ -22,7 +22,6 @@
 
 /* Typography
 --------------------------------------------- */
-
 body {
     font-family: 'marcellus', Arial, Helvetica, sans-serif;
     font-size: 1rem;
@@ -30,11 +29,11 @@ body {
     line-height: 1.5;
     margin: 0;
     width: 100%;
-    background-color: #b0e2f8;
+    background-color: #e3f7ff;
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #ffffff;
     position: absolute;
     background-color: transparent;
@@ -43,6 +42,7 @@ h1 {
     margin: 0;
     padding-top: .9rem;
     text-transform: uppercase;
+    font-family: 'jua', Arial, Helvetica, sans-serif;
 }
 
 h2 {
@@ -83,7 +83,7 @@ a:focus {
 
 a:active {
     color: green;
-    background-color: skyblue;
+    background-color: #87ceeb;
 }
 
 /* Header
@@ -113,11 +113,6 @@ video {
     left: 0;
     right: 0;
     z-index: 0;
-}
-
-.site-logo {
-    font-size: 2.5rem;
-    font-family: 'jua', Arial, Helvetica, sans-serif;
 }
 
 .site-navigation {
@@ -180,7 +175,7 @@ video {
 .site-main {
     display: block;
     top: 20rem;
-    background-color: #b0e2f8;
+    background-color: #d6f2fe;
 }
 
 .site-main p {
@@ -201,7 +196,6 @@ figcaption {
     margin-left: auto;
     margin-right: auto;
     border-collapse: collapse;
-    border: .15rem solid #8c8c8c;
     font-size: .8rem;
     letter-spacing: .2rem;
 }
@@ -220,7 +214,7 @@ tfoot {
 th,
 td {
     font-size: .8rem;
-    border: .2rem solid #a0a0a0;
+    border: .2rem solid #000080;
 }
 
 td:last-of-type {
@@ -228,7 +222,7 @@ td:last-of-type {
 }
 
 tbody>tr:nth-last-of-type(even) {
-    background-color: rgb(237 238 242);
+    background-color: #edeef2;
 }
 
 /* Food-Section(Mobile-view)
@@ -262,9 +256,10 @@ tbody>tr:nth-last-of-type(even) {
 
 .food-culture-3 {
     border-top: .1rem solid #000080;
+    border-bottom: .1rem solid #000080;
     background-color: white;
     padding: 1rem;
-    margin: 0 .5rem;
+    margin: 0 .5rem 1rem .5rem;
 }
 
 /* History-Section(Mobile-view)
@@ -274,6 +269,7 @@ tbody>tr:nth-last-of-type(even) {
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 1rem;
+    border-bottom: .1rem solid #000080;
 }
 
 .history-section img {
@@ -308,7 +304,6 @@ tbody>tr:nth-last-of-type(even) {
 
 /* footer-Section(Mobile-view)
 --------------------------------------------- */
-
 .site-footer {
     display: block;
     position: absolute;
@@ -333,15 +328,21 @@ tbody>tr:nth-last-of-type(even) {
 
 @media (min-width: 50em) {
 
-/* Header-Section
+    /* Header-Section
 ----------------------------------------------*/
     .menu-toggle {
         display: none;
     }
 
-    .site-logo {
+    .site-header h1 {
         top: 1.5rem;
         left: 5rem;
+    }
+
+    .site-name {
+        top: 1.5rem;
+        left: 5rem;
+        letter-spacing: 1rem;
     }
 
     .site-navigation {
@@ -372,7 +373,7 @@ tbody>tr:nth-last-of-type(even) {
         padding-bottom: 1rem;
     }
 
-/* Main-Section
+    /* Main-Section
 ----------------------------------------------*/
     figcaption {
         text-align: center;
@@ -397,7 +398,31 @@ tbody>tr:nth-last-of-type(even) {
         margin-right: 0;
     }
 
-/* History-Section
+    /* Food-Section
+----------------------------------------------*/
+    .food-section img {
+        width: 25rem;
+        height: 15.75rem;
+    }
+
+    .food-section {
+        display: grid;
+        grid-template-columns: minmax(0, 24rem) minmax(0, 24rem) minmax(0, 24rem);
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .food-culture-3 {
+        margin-bottom: 0;
+    }
+
+    .food-culture-2 {
+        border-top: .1rem solid #ffffff;
+        border-bottom: .1rem solid #ffffff;
+    }
+
+    /* History-Section
 ----------------------------------------------*/
     .history-section {
         display: flex;
@@ -419,31 +444,11 @@ tbody>tr:nth-last-of-type(even) {
         padding: 1rem 1rem 0 1rem;
     }
 
-/* Food-Section
-----------------------------------------------*/
-    .food-section img {
-        width: 25rem;
-        height: 15.75rem;
+    .history-content {
+        order: 0;
     }
 
-    .food-section {
-        display: grid;
-        grid-template-columns: minmax(0, 24rem) minmax(0, 24rem) minmax(0, 24rem);
-        align-items: center;
-        gap: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    .food-culture-3 {
-        border-bottom: .1rem solid #000080;
-    }
-
-    .food-culture-2 {
-        border-top: .1rem solid #ffffff;
-        border-bottom: .1rem solid #ffffff;
-    }
-
-/* Discover-Section
+    /* Discover-Section
 ----------------------------------------------*/
     .discover-header {
         display: flex;
@@ -469,21 +474,17 @@ tbody>tr:nth-last-of-type(even) {
         padding: 1rem;
     }
 
-/* Credit-Section  
+    /* Credit-Section
 ----------------------------------------------*/
-    .credit-section-1 p {
+    .site-main {
         text-align: center;
     }
 
-    .credit-main {
-        text-align: center;
-    }
-
-    .credit-main li {
+    .site-main li {
         list-style: none;
     }
 
-/* site-footer 
+    /* site-footer 
 ----------------------------------------------*/
     .site-footer {
         display: flex;
@@ -491,7 +492,7 @@ tbody>tr:nth-last-of-type(even) {
         align-items: center;
     }
 
-    .footer-name p {
+    .footer-header p {
         font-size: 1.5rem;
     }
 
@@ -504,5 +505,4 @@ tbody>tr:nth-last-of-type(even) {
         font-size: 1.5rem;
         margin-bottom: .5rem;
     }
-
 }

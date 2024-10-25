@@ -1,5 +1,5 @@
 
-// This code is referenced and taken from the news content in the Web development course.
+// This code is taken from the news content in the Web development course from the teacher Gabbie.
 
 ( function() {
 	const siteNavigation = document.getElementById( 'site-navigation' );
